@@ -1,0 +1,141 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.0.1, 11 September 2016) written by
+% LianTze Lim (liantze@gmail.com), based on the 
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you'll need to install
+%% Academicons.ttf in your operating system's font %% folder.
+
+\usepackage[french]{babel}
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1cm,bottom=1cm}
+
+% Change the font if you want to.
+\setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{0041C2}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Julien Boulay}
+\tagline{PhD -- en Formation Développeur logiciel/web CEFIM}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+\photo{2.5cm}{photo.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{ju.boulay@gmail.com} 
+%   \phone{000-00-0000}
+  \mailaddress{7 rue Inkermann 37000 TOURS}
+  \location{Région Centre} \\
+  \phone{+33 620210087}
+  \car{Permis B -- Voiture}
+  \twitter{@IncrediblMaggot}
+  \linkedin{Julien Boulay}
+  \github{github.com/incrediblemaggot}
+  \stackoverflow{stackoverflow.com/users/5263747/julien-boulay}
+  
+%   \github{github.com/mmayer} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too
+}
+
+%% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
+\begin{adjustwidth}{}{-8cm}
+\makecvheader
+\end{adjustwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Expérience}
+
+\cvevent{Période post-doctorale}{Université de Lille}{Jan 2016 -- Déc 2016}{Lille}
+\begin{itemize}
+\item Mise en place de protocoles expérimentaux, encadrement de stagiaires (niveau Master) et valorisation de travaux (communications écrites et orales).
+\item Veille bibliographique, compilation d'études et écriture d'une revue de référence sur les comportements collectifs observés dans le règne animal.
+
+\end{itemize}
+
+\divider
+
+\cvevent{Doctorat obtenu en cotutelle}{Université de Lille et Université Libre de Bruxelles}{Sept 2011 -- Déc 2015}{Lille et Bruxelles}
+\begin{itemize}
+\item Réalisation d'une thèse en sciences du comportement en mode projet.
+\item Encadrements et enseignements à des étudiant(e)s de tous niveaux (Licence, Master).
+\item Communications orales et écrites pour tous publics (scientifiques et néophytes).
+\end{itemize}
+
+\divider
+
+\cvevent{Stage de Master 1 et 2}{INRA et Université de Lille}{3 et 6 mois 2010/11}{Tours et Lille}
+\begin{itemize}
+\item Mise en place, réalisation et valorisation d'études expérimentales sur le comportement animal.
+
+\end{itemize}
+\divider
+
+\cvevent{Activité de Traiteur}{Frédeville Organisation}{tous les étés de 2005 à 2010}{Tours}
+
+\begin{itemize}
+\item Manutentionnaire, responsable du matériel et service lors de divers événements (mariages, repas d'entreprises). 
+\end{itemize}
+
+% \divider
+
+% \cvevent{Product Engineer}{Google}{23 June 1999 -- 2001}{Palo Alto, CA}
+
+% \begin{itemize}
+% \item Joined the company as employe \#20 and female employee \#1
+% \item Developed targeted advertisement in order to use user's search queries and show them related ads
+% \end{itemize}
+
+\cvsection{Une journée type}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+\wheelchart{1.5cm}{0.5cm}{%
+  10/13em/accent!30/Sommeil et rêves\\ sur de nouvelles idées, 
+  25/9em/accent!60/Travail prospectif et Démarche innovante,
+  5/12em/accent!10/Vie Associative, 
+  15/12em/accent!40/Éveil intellectuel,
+  10/8em/accent!20/Expertise scientifique et technique,
+  30/9em/accent/Gestion des problématiques complexes et du changement,
+  5/8em/accent!20/Veille Technologique \\et Informationnelle
+}
+
+\clearpage
+
+
+\end{document}
